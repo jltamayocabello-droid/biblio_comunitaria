@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Comunitaria</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Importamos una fuente moderna desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <h1>📚 Biblioteca<span>Comunitaria</span></h1>
+        </div>
+        <button id="ia-button" class="btn-ia">
+            ✨ Recomiéndame un libro con IA
+        </button>
+    </header>
+
+    <main class="container">
+        <section class="search-section">
+            <h2>Encuentra tu próxima lectura</h2>
+            <p>Busca entre miles de libros disponibles en Open Library.</p>
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Escribe el título de un libro o autor...">
+                <button id="search-button">Buscar</button>
+            </div>
+        </section>
+
+        <!-- Contenedor donde se inyectarán los resultados con JS -->
+        <section id="results-container" class="book-grid">
+            <!-- Los libros aparecerán aquí dinámicamente -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Proyecto Inmersión Dev Alura</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
