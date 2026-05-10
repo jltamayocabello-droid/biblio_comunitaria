@@ -182,7 +182,7 @@ footer {
     margin-bottom: 0.5rem;
     color: #2c3e50;
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* Corta el texto a 2 líneas */
+    line-clamp: 2; /* Corta el texto a 2 líneas */
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -197,4 +197,26 @@ footer {
     text-align: center;
     font-size: 1.2rem;
     color: #3498db;
+}
+
+/* Estilos para el contenedor de la respuesta de IA */
+.ia-response {
+    display: none; /* Inicia oculto, JS lo cambiará a "block" */
+    background-color: #f0f8ff; /* Color azul muy clarito */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cce0ff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.ia-response h3 {
+    color: #0056b3;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.ia-response p {
+    color: #333;
+    line-height: 1.6;
 }
